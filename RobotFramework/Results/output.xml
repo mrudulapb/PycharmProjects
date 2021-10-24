@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211023 17:31:17.031" rpa="false" schemaversion="2">
+<suite id="s1" name="WorkingWithCheckboxes" source="C:\Users\mrudu\PycharmProjects\RobotFramework\TestSuite\WorkingWithCheckboxes.robot">
+<test id="s1-t1" name="TC to demonstrate working with checkboxes in Robot FW">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.sugarcrm.com/au/request-demo/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211023 17:31:17.330" level="INFO">Opening browser 'chrome' to base url 'https://www.sugarcrm.com/au/request-demo/'.</msg>
+<status status="PASS" starttime="20211023 17:31:17.330" endtime="20211023 17:31:19.982"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211023 17:31:19.982" endtime="20211023 17:31:20.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211023 17:31:25.143" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211023 17:31:20.135" endtime="20211023 17:31:25.143"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*[@id="field1"]/div/input</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211023 17:31:25.143" endtime="20211023 17:31:25.472"/>
+</kw>
+<kw name="Page Should Contain Checkbox" library="SeleniumLibrary">
+<arg>id:interest_market_c0</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<msg timestamp="20211023 17:31:25.559" level="INFO">Current page contains checkbox 'id:interest_market_c0'.</msg>
+<status status="PASS" starttime="20211023 17:31:25.472" endtime="20211023 17:31:25.559"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:interest_market_c0</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211023 17:31:25.559" level="INFO">Selecting checkbox 'id:interest_market_c0'.</msg>
+<status status="PASS" starttime="20211023 17:31:25.559" endtime="20211023 17:31:25.690"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:interest_market_c0</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20211023 17:31:25.690" level="INFO">Verifying checkbox 'id:interest_market_c0' is selected.</msg>
+<status status="PASS" starttime="20211023 17:31:25.690" endtime="20211023 17:31:25.714"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211023 17:31:25.923" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211023 17:31:25.714" endtime="20211023 17:31:25.939"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211023 17:31:30.940" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211023 17:31:25.939" endtime="20211023 17:31:30.940"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>id:interest_sell_c0</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20211023 17:31:30.940" level="INFO">Verifying checkbox 'id:interest_sell_c0' is not selected.</msg>
+<status status="PASS" starttime="20211023 17:31:30.940" endtime="20211023 17:31:31.003"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>id:interest_market_c0</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20211023 17:31:31.003" level="INFO">Unselecting checkbox 'id:interest_market_c0'.</msg>
+<status status="PASS" starttime="20211023 17:31:31.003" endtime="20211023 17:31:31.107"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>id:interest_market_c0</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20211023 17:31:31.107" level="INFO">Verifying checkbox 'id:interest_market_c0' is not selected.</msg>
+<status status="PASS" starttime="20211023 17:31:31.107" endtime="20211023 17:31:31.163"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211023 17:31:31.407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211023 17:31:31.163" endtime="20211023 17:31:31.407"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211023 17:31:36.410" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211023 17:31:31.407" endtime="20211023 17:31:36.410"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211023 17:31:36.410" endtime="20211023 17:31:38.653"/>
+</kw>
+<doc>TC to demonstrate working with checkboxes in Robot FW</doc>
+<status status="PASS" starttime="20211023 17:31:17.330" endtime="20211023 17:31:38.656"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20211023 17:31:17.031" endtime="20211023 17:31:38.659"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WorkingWithCheckboxes">WorkingWithCheckboxes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
